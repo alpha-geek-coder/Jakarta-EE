@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="jakarta.faces.html">
+<h:head>
+    <h:title>Enter Customer Information (Conversation Scope) - Page 3</h:title>
+</h:head>
+<h:body>
+    <h:form>
+        <h:panelGrid columns="2">
+            <h:outputLabel for="phoneHome" value="Phone Home" />
+            <h:inputText id="phoneHome" value="#{customerInfo.phoneHome}" />
+            <h:outputLabel for="phoneWork" value="Phone Work" />
+            <h:inputText id="phoneWork" value="#{customerInfo.phoneWork}" />
+            <h:outputLabel for="phoneMobile" value="Phone Mobile" />
+            <h:inputText id="phoneMobile" value="#{customerInfo.phoneMobile}" />
+            <h:panelGroup />
+            <h:commandButton value="Submit" action="#{customerInfoController.navigateToConfirmationPage()}" />
+        </h:panelGrid>
+    </h:form>
+</h:body>
+
+</html>
